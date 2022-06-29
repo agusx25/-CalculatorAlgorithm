@@ -1,0 +1,19 @@
+class EqSolver():
+    def __init__(self):
+        self.terminos = []
+        self.operations = []
+    def separate(self, equation):
+        self.terminos = equation.replace('-',' -').replace('+',' ').split()
+        for i in equation:
+            if i == '+' or i == '-':
+                self.operations.append(i)
+    def interSeparate(self,equation):
+        pass
+    def multiply(self, equation):
+        for termino_index in range(len(self.terminos)):
+            if '*' in self.terminos[termino_index]:
+                pass
+                
+if __name__ == '__main__':
+    eqsol = EqSolver()
+    print("hola")
